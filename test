@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build --build-arg BASE_TAG=latest --tag fabon/review-techbooster:local-build .
+docker run -t --rm -v $(pwd):/book fabon/review-techbooster:local-build /bin/sh -ci "cd /book/techbooster-template && sh setup.sh && npm run pdf"

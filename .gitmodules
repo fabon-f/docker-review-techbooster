@@ -1,0 +1,3 @@
+[submodule "techbooster-template"]
+	path = techbooster-template
+	url = https://github.com/TechBooster/ReVIEW-Template.git
